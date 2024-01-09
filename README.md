@@ -31,7 +31,6 @@ HOTKEY_SET_SOURCES_COMPUTER_TWO_AND_SLEEP = "CTRL + ALT + BREAK"
 
 CONF_SCREENS = {
     "MODEL_SCREEN_1": {  # Model from `get_monitors_info.py`
-
         Computer.One: InputSource.DP1,
         Computer.Two: InputSource.HDMI2,
     },
@@ -42,7 +41,7 @@ CONF_SCREENS = {
 }
 ```
 
-### Run the script
+### 3 - Run the script
 You can then launch the script like any other from the command line:
 ``` shell
 python monitor_swapper.py
@@ -55,4 +54,4 @@ pyinstaller --clean --onefile --noconsole --add-data "monitor.ico:." --icon moni
 
 
 ## Misc
-The icon is from [flaticon.com](https://www.flaticon.com/free-icon/monitor_9351909)
+The binary and systray icon is from [flaticon.com](https://www.flaticon.com/free-icon/monitor_9351909)
